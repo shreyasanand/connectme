@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Socket.IO chat</title>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript">
+    </script>
+    <script src="/socket.io/socket.io.js" type="text/javascript">
+    </script>
+    <script src="js/bootstrap.min.js" type="text/javascript">
+    </script>
+    <script src="index.js" type="text/javascript">
+    </script>
+</head>
+<body>
+    <h1>Connect.me</h1><br>
+    <br>
+    <div class='signin'>
+        <div class='form animated flipInX'>
+            <h2>Login To Your Account</h2><input id='txtUsrname' placeholder='Username' type='text'> <input id='txtPwd'
+            placeholder='Password' type='password'> <button class='animated infinite pulse' id=
+            'btnSignIn'>Login</button><br>
+            <br>
+            <button class='animated infinite pulse' id='btnSignUp'>Sign up</button>
+        </div>
+    </div>
+    <div class="msgBar" id="divErrorStatus">
+        <p class="errorMsg"><i></i><span id="divErrorMsg"></span></p>
+    </div>
+    <div class='signup'>
+        <div class='form animated flipInX' id='signUpForm'>
+            <h2>Sign up</h2><input id='txtNewName' placeholder='Name' type='text'> <input id='txtNewUsrname'
+            placeholder='Username' type='text'> <input id='txtNewPwd' placeholder='Password' type='password'>
+            <input id='txtNewEmail' placeholder='Email' type='text'> <button class='animated infinite pulse' id=
+            'btnRegister'>Sign up</button><br>
+            <br>
+            <button class='animated infinite pulse' id='btnRedirectToSignIn'>Sign in</button>
+        </div>
+    </div>
+    <div class='profileBar animated flipInX' id='profileBar'>
+        <div class="circle-avatar" style="background-image:url(http://placekitten.com/g/200/400)"></div><br>
+        <br>
+        <h3 id="profileBarUser">Hi, </h3><br>
+        <br>
+        <button class='animated infinite pulse' id='btnLogout'>Logout</button>
+    </div>
+    <div class='chatRooms animated flipInX' id="chatRooms">
+        <p class="toolHeader divTitle" style="text-align:center">Chat Rooms <a data-target="#modalCreateRoom"
+        data-toggle="modal" href="#" id="addRoomLink" tabindex="-1" title="Click to create a new room">+</a></p>
+        <div class="divChatRooms"></div>
+    </div>
+    <div class="divChatRoomWindow slide-in">
+        <p class="toolHeader divTitle" style="text-align:center"></p><button data-toggle="tooltip" id=
+        "btnLeave" title="Click to exit chat room" type="button"><img id="closeBtn" src=
+        "http://zengshen.e7play.com/page/wap/img/close-btn.png"></button>
+        <div class="divChatMsgs"></div>
+        <div class="divChatControls">
+            <div class="col-md-9">
+                <input class="form-control" id="txtTypedMsg" onkeypress="handle(event)" placeholder=
+                "Enter your message here..." type="text">
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-sm btn-default" disabled id="btnSendMessage" type="button">Send</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalCreateRoom">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Enter a unique room name:</p>
+                    <div class="divChatRoomName form-group has-feedback">
+                        <input class="form-control" id="txtChatRoomName" placeholder="Room Name" type="text">
+                        <div class="divChatRoomNameValidity"></div>
+                    </div><br>
+                    <button class="btn btn-sm btn-warning" data-dismiss="modal" disabled id="btnCreateRoom" type=
+                    "button">Create</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</body>
+</html>

@@ -45,10 +45,10 @@ function createServerCallbackHandler(request, response) {
 
 // Create a connection to the mysql database
 var dbConn = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '1234',
-    database: 'connectme'
+    host: 'us-cdbr-iron-east-03.cleardb.net',
+    user: 'bf8389a8ce592f',
+    password: 'fd6646e4',
+    database: 'heroku_2fcab8e41eaf3b5'
 });
 
 // Establish the database connection

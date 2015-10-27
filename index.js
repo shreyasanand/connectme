@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var socket = io.connect("http://10.192.1.140:3000/");
+    var socket = io.connect();
     var userName;
     
     // Initial page setup (Login page)

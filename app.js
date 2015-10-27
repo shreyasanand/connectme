@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
 app.use(favicon(__dirname + '/favicon.ico'));
 
 // Create an instance of http server that listens on TCP port 3000
-var server = http.createServer(createServerCallbackHandler).listen(3000, function() {
+var server = http.createServer(createServerCallbackHandler).listen(process.env.PORT || 3000, function() {
     console.log('listening on *:3000');
 });
 

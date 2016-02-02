@@ -26,7 +26,16 @@ A simple multi-room chat application developed using node.js and twitter bootstr
     9) Similarly, if a person has left a chatroom, notification saying user has left the chatroom. For ex: ‘mary has left the room’.
     10)	User can leave a chat room by clicking on the ‘x’ sign on the chat room box.
     11)	User can also simultaneously chat with people in multiple chatrooms.
-    12)	‘Logout’ option allows the user to log out of the application. Once the user logs                    out, he will automatically be             logged out from all of the chat rooms.
+    12)	‘Logout’ option allows the user to log out of the application. Once the user logs out, he will automatically be logged out from all         of the chat rooms.
+
+# Screenshots
+
+![alt tag](https://raw.github.com/shreyasanand/connectme/master/login.PNG)
+![alt tag](https://raw.github.com/shreyasanand/connectme/master/Signup.PNG)
+![alt tag](https://raw.github.com/shreyasanand/connectme/master/homepage.PNG)
+![alt tag](https://raw.github.com/shreyasanand/connectme/master/createroom.PNG)
+![alt tag](https://raw.github.com/shreyasanand/connectme/master/chat.PNG)
+![alt tag](https://raw.github.com/shreyasanand/connectme/master/chat1.PNG)
     
 # Would you like to see a demo?
 

@@ -30,12 +30,12 @@ A simple multi-room chat application developed using node.js and twitter bootstr
 
 # Screenshots
 
-![alt tag](https://raw.github.com/shreyasanand/connectme/master/login.PNG)
-![alt tag](https://raw.github.com/shreyasanand/connectme/master/Signup.PNG)
-![alt tag](https://raw.github.com/shreyasanand/connectme/master/homepage.PNG)
-![alt tag](https://raw.github.com/shreyasanand/connectme/master/createroom.PNG)
-![alt tag](https://raw.github.com/shreyasanand/connectme/master/chat.PNG)
-![alt tag](https://raw.github.com/shreyasanand/connectme/master/chat1.PNG)
+![alt tag](https://raw.github.com/shreyasanand/connectme/master/screenshots/login.PNG)
+![alt tag](https://raw.github.com/shreyasanand/connectme/master/screenshots/Signup.PNG)
+![alt tag](https://raw.github.com/shreyasanand/connectme/master/screenshots/homepage.PNG)
+![alt tag](https://raw.github.com/shreyasanand/connectme/master/screenshots/createroom.PNG)
+![alt tag](https://raw.github.com/shreyasanand/connectme/master/screenshots/chat.PNG)
+![alt tag](https://raw.github.com/shreyasanand/connectme/master/screenshots/chat1.PNG)
     
 # Would you like to see a demo?
 
